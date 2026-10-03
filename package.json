@@ -1,0 +1,20 @@
+{
+  "name": "gol-backend",
+  "version": "1.0.0",
+  "description": "Conway 生命游戏棋盘演化与周期检测后端（API + CLI）",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test \"dist/tests/**/*.test.js\"",
+    "start": "node dist/src/server.js",
+    "dev": "tsx src/server.ts",
+    "cli": "tsx src/cli.ts",
+    "demo": "tsx src/demo.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
