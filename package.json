@@ -1,0 +1,23 @@
+{
+  "name": "golife-backend",
+  "version": "1.0.0",
+  "description": "Conway 生命游戏离线演化与周期检测后端（API + CLI）",
+  "private": true,
+  "main": "dist/src/cli.js",
+  "bin": {
+    "golife": "dist/src/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/**/*.test.js\"",
+    "start": "node dist/src/cli.js serve",
+    "demo": "npm run build && node dist/src/demo.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
